@@ -1,0 +1,86 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARS */
+:root {
+    --text-color: hsl(193, 38%, 86%);
+    --advice-dice-color: hsl(150, 100%, 66%);
+    --advice-card-color: hsl(217, 19%, 24%);
+    --background-color: hsl(218, 23%, 16%);
+
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    font-weight: 800;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background-color: var(--advice-card-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin:20px ;
+    width: 400px;    
+    border-radius: 3%;    
+    
+}
+.info {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+}
+.info h2 {
+    padding: 20px;    
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--advice-dice-color);
+}
+.info .advice {
+    padding: 0 40px 40px;
+    font-size: 18px;
+    color: var(--text-color);
+    
+}
+.divisor {
+    width: 100%;
+}
+.button-dice { 
+    cursor: pointer; 
+    width: 60px;
+    height: 60px;
+    background-color: var(--advice-dice-color);
+    border-radius: 50%;
+    transform: translateY(50%);
+}
+.button-dice:hover{
+    color: #53ffab;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}
+.dice {
+    width: 24px;
+    height: 24px; 
+   
+}
+
+@media screen and(max-width:468px) {
+    .card {
+        height: 300px;
+    }
+}
+
